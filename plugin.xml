@@ -63,8 +63,6 @@
     <framework src="SystemConfiguration.framework" />
     <framework src="MobileCoreServices.framework" />
 
-    MobileCoreServices.framework
-
     <config-file target="*-Info.plist" parent="ApiUser">
         <string>$API_USER</string>
     </config-file>
