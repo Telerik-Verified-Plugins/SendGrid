@@ -80,10 +80,12 @@
     self.xsmtpapi = [self.smtpapi encodedHeader];
     NSLog(@"%@", self.xsmtpapi);
     
+    /* this is not in line with the Android version of this plugin and also not what you'd expcet, so commented these
     if (self.html != nil && self.text == nil)
         self.text = self.html;
     if (self.html == nil && self.text != nil)
         self.html = self.text;
+    */
     
     //must set the "to" parameter even if X-SMTPAPI tos array is set
     if ([self.smtpapi getTos] != nil && [[self.smtpapi getTos] count] > 0 && self.to == nil)
