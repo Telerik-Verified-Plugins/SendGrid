@@ -27,6 +27,9 @@
     <header-file src="src/ios/SendGridEmail.h"/>
     <source-file src="src/ios/SendGridEmail.m" />
 
+    <header-file src="src/ios/SMTPAPI/SMTPAPI.h" />
+    <source-file src="src/ios/SMTPAPI/SMTPAPI.m"/>
+
     <dependency id="com.telerik.afnetworking" />
 
     <framework src="Security.framework" />
