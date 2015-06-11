@@ -10,6 +10,12 @@
     <clobbers target="sendgrid" />
   </js-module>
 
+  <engines>
+    <engine name="cordova" version=">=3.0.0"/>
+    <!-- needed for gradleReference support -->
+    <engine name="cordova-plugman" version=">=4.2.0"/>
+  </engines>
+
   <platform name="ios">
 
     <config-file parent="/*" target="config.xml">
