@@ -3,6 +3,10 @@
 
   <name>SendGrid</name>
 
+  <description>
+    Cordova plugin for the SendGrid API
+  </description>
+    
   <preference name="API_USER" />
   <preference name="API_KEY" />
 
