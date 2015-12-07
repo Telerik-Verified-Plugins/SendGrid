@@ -14,8 +14,8 @@
     NSDictionary* body = [command.arguments objectAtIndex:0];
 
     if (body != nil) {
-        NSString *apiUser = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"ApiUser"];
-        NSString *apiKey = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"ApiKey"];
+        NSString *apiUser = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"SendGridApiUser"];
+        NSString *apiKey = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"SendGridApiKey"];
 
         SendGrid *sendGrid = [SendGrid apiUser:apiUser apiKey:apiKey];
 

@@ -32,10 +32,10 @@ public class SendGridPlugin extends CordovaPlugin {
 
     private void send(final CallbackContext callbackContext, final JSONObject jsonObject) throws JSONException, IOException {
 
-      int appResId = cordova.getActivity().getResources().getIdentifier("api_user", "string", cordova.getActivity().getPackageName());
+      int appResId = cordova.getActivity().getResources().getIdentifier("sendgrid_api_user", "string", cordova.getActivity().getPackageName());
       String apiUser = cordova.getActivity().getString(appResId);
 
-      appResId = cordova.getActivity().getResources().getIdentifier("api_key", "string", cordova.getActivity().getPackageName());
+      appResId = cordova.getActivity().getResources().getIdentifier("sendgrid_api_key", "string", cordova.getActivity().getPackageName());
 
       String apiKey = cordova.getActivity().getString(appResId);
 

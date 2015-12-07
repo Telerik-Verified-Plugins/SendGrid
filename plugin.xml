@@ -46,11 +46,11 @@
     <framework src="SystemConfiguration.framework" />
     <framework src="MobileCoreServices.framework" />
 
-    <config-file target="*-Info.plist" parent="ApiUser">
+    <config-file target="*-Info.plist" parent="SendGridApiUser">
         <string>$API_USER</string>
     </config-file>
 
-    <config-file target="*-Info.plist" parent="ApiKey">
+    <config-file target="*-Info.plist" parent="SendGridApiKey">
         <string>$API_KEY</string>
     </config-file>
 
@@ -58,11 +58,9 @@
 
   	<platform name="android">
 
-		<source-file src="src/android/res/values/sendgrid.xml" target-dir="res/values" />
-
-        <config-file target="res/values/sendgrid.xml" parent="/*">
-            <string name="api_user">$API_USER</string>
-            <string name="api_key">$API_KEY</string>
+        <config-file target="res/values/strings.xml" parent="/*">
+            <string name="sendgrid_api_user">$API_USER</string>
+            <string name="sendgrid_api_key">$API_KEY</string>
         </config-file>
 
 		<config-file target="res/xml/config.xml" parent="/*">
