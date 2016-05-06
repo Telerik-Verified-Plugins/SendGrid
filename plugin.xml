@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="com.telerik.sendgrid" version="1.0.6" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="com.telerik.sendgrid" version="1.0.7" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
 
   <name>SendGrid</name>
 
@@ -40,7 +40,7 @@
     <header-file src="src/ios/SMTPAPI/SMTPAPI.h" />
     <source-file src="src/ios/SMTPAPI/SMTPAPI.m"/>
 
-    <dependency id="com.telerik.afnetworking" />
+    <dependency id="com-telerik-afnetworking" />
 
     <framework src="Security.framework" />
     <framework src="SystemConfiguration.framework" />
