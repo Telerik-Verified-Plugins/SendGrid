@@ -40,7 +40,7 @@
     <header-file src="src/ios/SMTPAPI/SMTPAPI.h" />
     <source-file src="src/ios/SMTPAPI/SMTPAPI.m"/>
 
-    <dependency id="com-telerik-afnetworking" />
+    <dependency id="cordova-plugin-afnetworking" />
 
     <framework src="Security.framework" />
     <framework src="SystemConfiguration.framework" />
