@@ -15,7 +15,7 @@ Although the object is in the global scope, it is not available until after the 
 
 You need to create an account. Once completed use the folloiwng from cordova CLI to install the plugin:
 
-    cordova plugin add url --variable API_USER="SendGrid Username" --variable API_KEY=SendGrid Password
+    cordova plugin add url --variable API_USER="SendGrid Username" --variable API_KEY="SendGrid Password"
 
 If you are using telerik AppBuilder then checkout the [plugins.telerik.com](http://plugins.telerik.com) for details on how to install it.
 

@@ -93,9 +93,15 @@
     else if (self.to == nil)
         [NSException raise:@"Missing to email value" format:@"to is: %@", self.to];
 
-    NSMutableDictionary *parameters =[NSMutableDictionary dictionaryWithDictionary:@{@"api_user": apiUser, @"api_key": apiKey, @"subject":self.subject, @"from":self.from, @"html":self.html,@"to":self.to, @"text":self.text, @"x-smtpapi":self.xsmtpapi}];
+    NSMutableDictionary *parameters =[NSMutableDictionary dictionaryWithDictionary:@{@"api_user": apiUser, @"api_key": apiKey, @"subject":self.subject, @"from":self.from, @"to":self.to, @"x-smtpapi":self.xsmtpapi}];
     
     //optional parameters
+    if (self.html != nil)
+        [parameters setObject:self.html forKey:@"html"];
+
+    if (self.text != nil)
+        [parameters setObject:self.text forKey:@"text"];
+
     if (self.bcc != nil)
         [parameters setObject:self.bcc forKey:@"bcc"];
     
