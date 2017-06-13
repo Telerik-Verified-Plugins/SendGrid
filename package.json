@@ -1,5 +1,5 @@
 {
-  "name": "Telerik_Verified_Plugins",
-  "description": "Sending Emails with cordova and Sendgrid",
-  "version": "0.0.1",
+  "name": "cordova-plugin-sendgrid",
+  "version": "1.0.9",
+  "description": "Sending Emails with Cordova and SendGrid"
 }
